@@ -31,11 +31,20 @@ body {
   color: #FFFFFF;
   min-height: 100vh;
   height: 100%;
-  background-position-x: right;
+  background-position-x: center;
 }
 @media screen and (min-width: 768px) {
   body {
     background-image: url("./../assets/images/background.jpg");
+  }
+}
+
+.wrapper {
+  margin-top: 60%;
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin-top: 30%;
   }
 }
 
@@ -62,17 +71,42 @@ body {
     font-size: 1.8rem;
   }
 }
+.section-text p.description {
+  font-family: "Open Sauce Two";
+  font-weight: 500;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .section-text p.description {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-text p.description {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .section-text p.description {
+    font-size: 1.1rem;
+  }
+}
 
 .section-cta p {
   font-family: "Open Sauce Two";
   font-weight: 500;
 }
+.section-cta p.note {
+  font-weight: 400;
+  color: #CFCFCF;
+  font-size: 0.7rem;
+}
 .section-cta a.cta-button {
   color: #2C2C2C;
-  background: linear-gradient(180deg, #B2FF8D 35.25%, #02D085 85.98%, #02D085 200.98%);
+  background: linear-gradient(180deg, #41F9FF 35.25%, #02A3D0 200.98%);
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 100px;
   cursor: pointer;
   font-size: 1rem;
   margin-top: 10px;
@@ -80,10 +114,8 @@ body {
   font-weight: 800;
 }
 
-.highlight-green {
-  background: linear-gradient(180deg, #B2FF8D 35.25%, #02D085 85.98%, #02D085 200.98%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.highlight {
+  color: #41F9FF;
 }
 
 .highlight-link {
@@ -100,7 +132,7 @@ body {
   left: 0;
   width: 100%;
   height: 12px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="389" height="12" viewBox="0 0 389 12" fill="none"><path d="M1.53662 7.20297C43.6605 6.51241 85.787 6.23633 127.906 5.15637C189.317 3.58172 250.697 1.51352 312.134 1.20192C333.11 1.09553 350.88 1.12216 371.382 1.61818C371.771 1.6276 383.069 1.75641 386.714 2.48538C390.292 3.20111 379.468 3.43554 375.822 3.5954C351.417 4.6654 326.98 4.94729 302.56 5.46856C294.353 5.64376 274.548 6.08875 265.583 6.30107C261.28 6.40297 248.44 5.97368 252.679 6.71733C258.283 7.70057 264.056 7.01237 269.745 7.06421C283.442 7.18901 295.807 7.18024 309.567 7.20297C326.571 7.23105 343.595 7.08293 360.594 7.58454C362.06 7.6278 369.885 7.75099 372.734 8.48643C373.402 8.65875 371.713 9.54246 371.035 9.66582C364.026 10.9402 342.578 10.9493 349.701 10.9493C356.443 10.9493 363.184 10.9493 369.925 10.9493" stroke="url(%23paint0_linear_1_722)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="paint0_linear_1_722" x1="194.483" y1="-1.25039" x2="194.483" y2="20.8435" gradientUnits="userSpaceOnUse"><stop offset="0.265" stop-color="%23B2FF8D"/><stop offset="0.49" stop-color="%2302D085"/><stop offset="1" stop-color="%2302D085"/></linearGradient></defs></svg>') no-repeat;
+  background: url("data:image/svg+xml,%3Csvg%20width%3D%22388%22%20height%3D%2212%22%20viewBox%3D%220%200%20388%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M1%207.05184C43.1239%206.36129%2085.2504%206.08521%20127.369%205.00524C188.78%203.4306%20250.16%201.3624%20311.598%201.0508C332.573%200.94441%20350.343%200.971036%20370.845%201.46705C371.234%201.47648%20382.532%201.60529%20386.177%202.33426C389.756%203.04998%20378.931%203.28442%20375.285%203.44428C350.881%204.51428%20326.443%204.79616%20302.024%205.31744C293.816%205.49264%20274.011%205.93763%20265.046%206.14995C260.744%206.25185%20247.903%205.82256%20252.142%206.56621C257.747%207.54944%20263.519%206.86125%20269.209%206.91309C282.905%207.03789%20295.27%207.02912%20309.031%207.05184C326.034%207.07993%20343.058%206.9318%20360.057%207.43341C361.523%207.47668%20369.348%207.59987%20372.198%208.3353C372.866%208.50762%20371.177%209.39134%20370.498%209.5147C363.489%2010.7891%20342.041%2010.7982%20349.165%2010.7982C355.906%2010.7982%20362.647%2010.7982%20369.388%2010.7982%22%20stroke%3D%22%2341F9FF%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E") no-repeat center top;
   background-size: contain;
   opacity: 1;
 }
@@ -156,6 +188,28 @@ body {
     filter: blur(64px);
     z-index: -1;
   }
+}
+
+.download-link a {
+  font-family: "Open Sauce Two";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #CFCFCF;
+}
+
+.alert-text {
+  font-family: "Open Sauce Two";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 33.8px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #D43C3C;
 }
 
 /*# sourceMappingURL=main.css.map */
