@@ -26,7 +26,7 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #090C13;
     background-image: url('./../assets/images/background-s.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -237,4 +237,40 @@ body {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #D43C3C;
+}
+
+body#vsl2 {
+    background-color: #090C13;
+    background-image: url('./../assets/images/background-dois.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $text-color;
+    min-height: 100vh;
+    height: 100%;
+    // background-size: cover;
+    background-position-x: 80%;
+
+    @media screen and (min-width:768px) {
+        background-image: url('./../assets/images/background-dois.jpg');
+        background-position-x: center;
+    }
+
+    .wrapper {
+        margin-top: 50%;
+
+        @media screen and (min-width:768px) {
+            margin-top: 0;
+        }
+    }
+
+    .alert-text {
+        font-family: 'Open Sauce Two';
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 33.8px;
+        // text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #D43C3C;
+    }
 }

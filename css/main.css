@@ -24,7 +24,7 @@
   src: url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-800-normal.woff2) format("woff2"), url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-800-normal.woff) format("woff"), url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-800-normal.ttf) format("truetype");
 }
 body {
-  background-color: #000000;
+  background-color: #090C13;
   background-image: url("./../assets/images/background-s.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -214,6 +214,40 @@ body {
   font-weight: 500;
   line-height: 33.8px;
   text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #D43C3C;
+}
+
+body#vsl2 {
+  background-color: #090C13;
+  background-image: url("./../assets/images/background-dois.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  min-height: 100vh;
+  height: 100%;
+  background-position-x: 80%;
+}
+@media screen and (min-width: 768px) {
+  body#vsl2 {
+    background-image: url("./../assets/images/background-dois.jpg");
+    background-position-x: center;
+  }
+}
+body#vsl2 .wrapper {
+  margin-top: 50%;
+}
+@media screen and (min-width: 768px) {
+  body#vsl2 .wrapper {
+    margin-top: 0;
+  }
+}
+body#vsl2 .alert-text {
+  font-family: "Open Sauce Two";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 33.8px;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #D43C3C;
