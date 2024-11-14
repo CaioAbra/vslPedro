@@ -39,6 +39,13 @@ body {
   }
 }
 
+.elipse {
+  background-image: url(./../assets/images/background-blur.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+}
+
 .wrapper {
   margin-top: 60%;
 }
