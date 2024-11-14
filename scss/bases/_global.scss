@@ -56,7 +56,7 @@ body {
     }
 }
 
-.container {
+.container-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,3 +274,150 @@ body#vsl2 {
         color: #D43C3C;
     }
 }
+
+body#vsl3 {
+    background-color: #090C13;
+    background-image: none;
+
+    .trader-section {
+        background-image: url('./../assets/images/background-tres.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        padding-bottom: 1%;
+        padding-top: 58%;
+
+        @media screen and (min-width:375px) {
+            padding-top: 50%;
+            padding-bottom: 1%;
+        }
+
+        @media screen and (min-width:425px) {
+            padding-top: 40%;
+            padding-bottom: 1%;
+        }
+
+        @media screen and (min-width:768px) {
+            padding-top: 28%;
+            padding-bottom: 1%;
+        }
+
+        @media screen and (min-width:1024px) {
+            padding-top: 27%;
+            padding-bottom: 10%;
+        }
+
+        @media screen and (min-width:1366px) {
+            padding-top: 26%;
+            padding-bottom: 13%;
+        }
+
+        h2 {
+            font-family: 'Open Sauce Two';
+            font-weight: 700;
+            color: #FFFFFF;
+
+            @media screen and (max-width:768px) {
+                font-size: 27px;
+            }
+
+            @media screen and (min-width:1366px) {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .card-section {
+        justify-content: center;
+    }
+
+    .custom-card {
+        background: rgba(10, 59, 78, 0.2);
+        border: 1px solid rgb(65, 249, 255);
+        border-radius: 12px;
+        align-content: center;
+        min-height: 11rem;
+
+        @media screen and (min-width:375px) {}
+
+        @media screen and (min-width:425px) {}
+
+        @media screen and (min-width:768px) {
+            min-height: 18rem;
+        }
+
+        @media screen and (min-width:1024px) {
+            // min-height: 1rem;
+        }
+
+        @media screen and (min-width:1366px) {
+            // min-height: 11rem;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1rem; // Tamanho da fonte
+            line-height: 1.5; // Espaçamento entre linhas
+        }
+    }
+
+    .list-section {
+        .custom-list {
+            list-style: none;
+            padding: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                font-size: 1rem;
+
+                .icon {
+                    margin-right: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                p {
+                    font-weight: 400;
+                    color: #CFCFCF;
+                }
+
+                .titleList {
+                    font-weight: 700;
+                    color: #FFFFFF;
+                }
+
+                // strong {
+                //     color: #00a8e8; // Cor do título
+                //     margin-right: 5px;
+                // }
+            }
+        }
+
+    }
+}
+
+/* image 1 */
+
+// position: absolute;
+// width: 1961px;
+// height: 2614px;
+// left: -41px;
+// top: -706px;
+
+// background: linear-gradient(180deg, rgba(9, 12, 19, 0) 46.34%, rgba(9, 12, 19, 0.6) 53.65%, #090C13 70.09%), url(ce020c1e-5d6b-403d-9a03-03ef3ab961f2.jpg);
+
+
+// /* Ellipse 1 */
+
+// position: absolute;
+// width: 1493px;
+// height: 680px;
+// left: 213.5px;
+// top: 370px;
+
+// background: #090C13;
+// opacity: 0.8;
+// filter: blur(75px);
