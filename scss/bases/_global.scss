@@ -81,22 +81,10 @@ body {
         }
     }
 
-    p.description {
+    .description {
         font-family: 'Open Sauce Two';
         font-weight: 500;
         color: #FFFFFF;
-
-        @media screen and (max-width:768px) {
-            font-size: .9rem;
-        }
-
-        @media screen and (min-width:1024px) {
-            font-size: 1rem;
-        }
-
-        @media screen and (min-width:1366px) {
-            font-size: 1.1rem;
-        }
     }
 }
 
@@ -108,7 +96,7 @@ body {
         &.note {
             font-weight: 400;
             color: #CFCFCF;
-            font-size: .7rem
+            font-size: 18px;
         }
     }
 
@@ -120,10 +108,11 @@ body {
         padding: 10px 20px;
         border-radius: 100px;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 22px;
         margin-top: 10px;
         font-family: 'Open Sauce Two';
         font-weight: 800;
+        text-transform: uppercase;
         // transition: box-shadow .5s ease;
 
         // &:hover {
@@ -218,7 +207,7 @@ body {
 .download-link {
     a {
         font-family: 'Open Sauce Two';
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 400;
         line-height: 23.4px;
         text-align: center;
@@ -230,7 +219,7 @@ body {
 
 .alert-text {
     font-family: 'Open Sauce Two';
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 33.8px;
     text-align: center;
@@ -265,7 +254,7 @@ body#vsl2 {
 
     .alert-text {
         font-family: 'Open Sauce Two';
-        font-size: 26px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 33.8px;
         // text-align: center;
@@ -318,11 +307,11 @@ body#vsl3 {
             color: #FFFFFF;
 
             @media screen and (max-width:768px) {
-                font-size: 27px;
+                font-size: 32px;
             }
 
             @media screen and (min-width:1366px) {
-                font-size: 28px;
+                font-size: 32px;
             }
         }
     }
@@ -361,8 +350,38 @@ body#vsl3 {
         }
     }
 
+    .custom-card2 {
+        border: 1px solid rgb(65, 249, 255) !important;
+        border-radius: 12px;
+        align-content: center;
+        min-height: 11rem;
+
+        @media screen and (min-width:375px) {}
+
+        @media screen and (min-width:425px) {}
+
+        @media screen and (min-width:768px) {
+            min-height: 18rem;
+        }
+
+        @media screen and (min-width:1024px) {
+            // min-height: 1rem;
+        }
+
+        @media screen and (min-width:1366px) {
+            // min-height: 11rem;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1rem; // Tamanho da fonte
+            line-height: 1.5; // Espaçamento entre linhas
+        }
+    }
+
     .list-section {
         .custom-list {
+            margin-top: 1rem;
             list-style: none;
             padding: 0;
 
@@ -373,6 +392,7 @@ body#vsl3 {
                 font-size: 1rem;
 
                 .icon {
+                    width: 18px;
                     margin-right: 10px;
                     display: flex;
                     align-items: center;

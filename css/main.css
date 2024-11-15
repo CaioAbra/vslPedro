@@ -78,25 +78,10 @@ body {
     font-size: 1.8rem;
   }
 }
-.section-text p.description {
+.section-text .description {
   font-family: "Open Sauce Two";
   font-weight: 500;
   color: #FFFFFF;
-}
-@media screen and (max-width: 768px) {
-  .section-text p.description {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .section-text p.description {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 1366px) {
-  .section-text p.description {
-    font-size: 1.1rem;
-  }
 }
 
 .section-cta p {
@@ -106,7 +91,7 @@ body {
 .section-cta p.note {
   font-weight: 400;
   color: #CFCFCF;
-  font-size: 0.7rem;
+  font-size: 18px;
 }
 .section-cta a.cta-button {
   color: #2C2C2C;
@@ -115,10 +100,11 @@ body {
   padding: 10px 20px;
   border-radius: 100px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 22px;
   margin-top: 10px;
   font-family: "Open Sauce Two";
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 .highlight {
@@ -199,7 +185,7 @@ body {
 
 .download-link a {
   font-family: "Open Sauce Two";
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 23.4px;
   text-align: center;
@@ -210,7 +196,7 @@ body {
 
 .alert-text {
   font-family: "Open Sauce Two";
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 33.8px;
   text-align: center;
@@ -245,7 +231,7 @@ body#vsl2 .wrapper {
 }
 body#vsl2 .alert-text {
   font-family: "Open Sauce Two";
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 33.8px;
   text-underline-position: from-font;
@@ -302,12 +288,12 @@ body#vsl3 .trader-section h2 {
 }
 @media screen and (max-width: 768px) {
   body#vsl3 .trader-section h2 {
-    font-size: 27px;
+    font-size: 32px;
   }
 }
 @media screen and (min-width: 1366px) {
   body#vsl3 .trader-section h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 body#vsl3 .card-section {
@@ -330,7 +316,24 @@ body#vsl3 .custom-card p {
   font-size: 1rem;
   line-height: 1.5;
 }
+body#vsl3 .custom-card2 {
+  border: 1px solid rgb(65, 249, 255) !important;
+  border-radius: 12px;
+  align-content: center;
+  min-height: 11rem;
+}
+@media screen and (min-width: 768px) {
+  body#vsl3 .custom-card2 {
+    min-height: 18rem;
+  }
+}
+body#vsl3 .custom-card2 p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
 body#vsl3 .list-section .custom-list {
+  margin-top: 1rem;
   list-style: none;
   padding: 0;
 }
@@ -341,6 +344,7 @@ body#vsl3 .list-section .custom-list li {
   font-size: 1rem;
 }
 body#vsl3 .list-section .custom-list li .icon {
+  width: 18px;
   margin-right: 10px;
   display: flex;
   align-items: center;
