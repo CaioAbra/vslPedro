@@ -77,12 +77,12 @@ body {
 }
 @media screen and (min-width: 1600px) {
   .wrapper {
-    margin-top: 8%;
+    margin-top: 0%;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1920px) {
   .wrapper {
-    margin-top: 30%;
+    margin-top: 8%;
   }
 }
 
