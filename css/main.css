@@ -90,6 +90,11 @@ body {
     margin-top: 10rem;
   }
 }
+@media screen and (min-width: 2500px) {
+  .wrapper {
+    margin-top: 10rem;
+  }
+}
 
 .container-wrapper {
   display: flex;
