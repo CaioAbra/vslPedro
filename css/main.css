@@ -239,7 +239,7 @@ body#vsl2 {
   }
 }
 body#vsl2 .wrapper {
-  margin-top: 50%;
+  margin-top: 80%;
 }
 @media screen and (min-width: 768px) {
   body#vsl2 .wrapper {

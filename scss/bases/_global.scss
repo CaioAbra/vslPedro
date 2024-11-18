@@ -83,7 +83,7 @@ body {
         color: #FFFFFF;
 
         // @media screen and (min-width:768px) {
-            font-size: 26px;
+        font-size: 26px;
         // }
 
         @media screen and (min-width:1024px) {
@@ -249,8 +249,8 @@ body {
     color: #D43C3C;
 }
 
-    body#vsl2 {
-        background:
+body#vsl2 {
+    background:
         #090C13 url('./../assets/images/BG-Captura02-Mob.jpg') no-repeat 80% top/cover;
     color: $text-color;
     min-height: 100vh;
@@ -263,7 +263,7 @@ body {
 
 
     .wrapper {
-        margin-top: 50%;
+        margin-top: 80%;
 
         @media screen and (min-width:768px) {
             margin-top: 0;
