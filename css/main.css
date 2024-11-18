@@ -34,6 +34,11 @@ body {
     background: #090C13 url("./../assets/images/BG-Captura01.jpg") no-repeat center/cover;
   }
 }
+@media screen and (min-width: 1024px) {
+  body {
+    background: #090C13 url("./../assets/images/BG-Captura01.jpg") no-repeat top/cover;
+  }
+}
 
 .elipse {
   background-image: url(./../assets/images/background-blur.png);
@@ -43,16 +48,16 @@ body {
 }
 
 .wrapper {
-  margin-top: 60%;
+  margin-top: 30%;
 }
 @media screen and (min-width: 768px) {
   .wrapper {
-    margin-top: 30%;
+    margin-top: 10%;
   }
 }
 @media screen and (min-width: 1024px) {
   .wrapper {
-    margin-top: 15%;
+    margin-top: 12%;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -265,7 +270,7 @@ body#vsl3 {
   }
 }
 body#vsl3 .trader-section {
-  background: url("./../assets/images/background-tres.jpg") no-repeat center top/cover;
+  background: url("./../assets/images/background-tres.jpg") no-repeat center top/cover, url("./../assets/images/Glow.png") no-repeat center top/100% 100%;
   padding-bottom: 1%;
   padding-top: 58%;
 }
