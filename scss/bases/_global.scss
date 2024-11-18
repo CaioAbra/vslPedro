@@ -26,25 +26,23 @@
 }
 
 body {
-    background-color: #090C13;
-    background-image: url('./../assets/images/background-s.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background:
+        #090C13 url('./../assets/images/BG-Captura01-mob.jpg') no-repeat center/cover;
     color: $text-color;
     min-height: 100vh;
     height: 100%;
-    // background-size: cover;
-    background-position-x: center;
 
-    @media screen and (min-width:768px) {
-        background-image: url('./../assets/images/background.jpg');
+    @media screen and (min-width: 768px) {
+        background:
+            #090C13 url('./../assets/images/BG-Captura01.jpg') no-repeat center/cover;
     }
+
 }
 
 .elipse {
     background-image: url(./../assets/images/background-blur.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position-y: top;
 }
 
@@ -53,6 +51,18 @@ body {
 
     @media screen and (min-width:768px) {
         margin-top: 30%;
+    }
+
+    @media screen and (min-width:1024px) {
+        margin-top: 15%;
+    }
+
+    @media screen and (min-width:1366px) {
+        margin-top: 12%;
+    }
+
+    @media screen and (min-width:2500px) {
+        margin-top: 40%;
     }
 }
 
@@ -72,20 +82,15 @@ body {
         font-weight: 700;
         color: #FFFFFF;
 
-        @media screen and (max-width:768px) {
-            font-size: 1.7rem;
-        }
+        // @media screen and (min-width:768px) {
+            font-size: 26px;
+        // }
 
-        @media screen and (min-width:1366px) {
-            font-size: 1.8rem;
+        @media screen and (min-width:1024px) {
+            font-size: 34px
         }
     }
 
-    .description {
-        font-family: 'Open Sauce Two';
-        font-weight: 500;
-        color: #FFFFFF;
-    }
 }
 
 .section-cta {
@@ -96,7 +101,11 @@ body {
         &.note {
             font-weight: 400;
             color: #CFCFCF;
-            font-size: 18px;
+            font-size: 12px;
+
+            @media screen and (min-width:768px) {
+                font-size: 12px;
+            }
         }
     }
 
@@ -114,6 +123,14 @@ body {
         font-weight: 800;
         text-transform: uppercase;
         // transition: box-shadow .5s ease;
+
+        @media screen and (max-width:768px) {
+            font-size: 1rem;
+        }
+
+        @media screen and (min-width:1024px) {
+            font-size: 18px;
+        }
 
         // &:hover {
         //     box-shadow: 0 8px 15px #02D085; // Sombra com base na cor do gradienteF
@@ -207,13 +224,17 @@ body {
 .download-link {
     a {
         font-family: 'Open Sauce Two';
-        font-size: 12px;
+        font-size: 18px;
         font-weight: 400;
         line-height: 23.4px;
         text-align: center;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         color: #CFCFCF;
+
+        @media screen and (max-width:768px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -229,20 +250,17 @@ body {
 }
 
 body#vsl2 {
-    background-color: #090C13;
-    background-image: url('./../assets/images/background-dois.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background:
+        #090C13 url('./../assets/images/BG-Captura02-mob.jpg') no-repeat 80% center/cover;
     color: $text-color;
     min-height: 100vh;
     height: 100%;
-    // background-size: cover;
-    background-position-x: 80%;
 
-    @media screen and (min-width:768px) {
-        background-image: url('./../assets/images/background-dois.jpg');
-        background-position-x: center;
+    @media screen and (min-width: 768px) {
+        background:
+            #090C13 url('./../assets/images/BG-Captura02.png') no-repeat center/cover;
     }
+
 
     .wrapper {
         margin-top: 50%;
@@ -265,14 +283,24 @@ body#vsl2 {
 }
 
 body#vsl3 {
-    background-color: #090C13;
-    background-image: none;
+
+    background: #090C13 none;
+
+
+    @media screen and (min-width:768px) {
+        background: #090C13 none;
+    }
+
+
 
     .trader-section {
-        background-image: url('./../assets/images/background-tres.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-x: center;
+        background: url('./../assets/images/background-tres.jpg') no-repeat center top/cover;
+
+
+
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position-x: center;
         padding-bottom: 1%;
         padding-top: 58%;
 
@@ -380,6 +408,8 @@ body#vsl3 {
     }
 
     .list-section {
+
+
         .custom-list {
             margin-top: 1rem;
             list-style: none;
@@ -416,6 +446,36 @@ body#vsl3 {
             }
         }
 
+    }
+
+    h3 {
+        font-family: 'Open Sauce Two';
+        font-weight: 500;
+
+        @media screen and (max-width:768px) {
+            font-size: 24px;
+        }
+    }
+}
+
+
+.subheading {
+    font-family: 'Open Sauce Two';
+    font-weight: 500;
+}
+
+.description {
+    font-family: 'Open Sauce Two';
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 15px;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width:1024px) {
+        font-size: 1rem
     }
 }
 

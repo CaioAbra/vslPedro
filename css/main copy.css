@@ -1,0 +1,364 @@
+@import url("https://fonts.cdnfonts.com/css/galano-grotesque-alt");
+/* open-sauce-two-latin-500-normal */
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 500;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-500-normal.woff2) format("woff2"), url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-500-normal.woff) format("woff"), url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-500-normal.ttf) format("truetype");
+}
+/* open-sauce-two-latin-700-normal */
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-700-normal.woff2) format("woff2"), url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-700-normal.woff) format("woff"), url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-700-normal.ttf) format("truetype");
+}
+/* open-sauce-two-latin-800-normal */
+@font-face {
+  font-family: "Open Sauce Two";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 800;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-800-normal.woff2) format("woff2"), url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-800-normal.woff) format("woff"), url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-800-normal.ttf) format("truetype");
+}
+body {
+  background-color: #090C13;
+  background-image: url("./../assets/images/background-s.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  min-height: 100vh;
+  height: 100%;
+  background-position-x: center;
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("./../assets/images/background.jpg");
+  }
+}
+
+.elipse {
+  background-image: url(./../assets/images/background-blur.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+}
+
+.wrapper {
+  margin-top: 60%;
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin-top: 30%;
+  }
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.section-text h3 {
+  font-family: "Open Sauce Two";
+  font-weight: 700;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .section-text h3 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .section-text h3 {
+    font-size: 1.8rem;
+  }
+}
+.section-text .description {
+  font-family: "Open Sauce Two";
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.section-cta p {
+  font-family: "Open Sauce Two";
+  font-weight: 500;
+}
+.section-cta p.note {
+  font-weight: 400;
+  color: #CFCFCF;
+  font-size: 18px;
+}
+.section-cta a.cta-button {
+  color: #2C2C2C;
+  background: linear-gradient(180deg, #41F9FF 35.25%, #02A3D0 200.98%);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 22px;
+  margin-top: 10px;
+  font-family: "Open Sauce Two";
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #41F9FF;
+}
+
+.highlight-link {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.highlight-link::after {
+  content: "";
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background: url("data:image/svg+xml,%3Csvg%20width%3D%22388%22%20height%3D%2212%22%20viewBox%3D%220%200%20388%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M1%207.05184C43.1239%206.36129%2085.2504%206.08521%20127.369%205.00524C188.78%203.4306%20250.16%201.3624%20311.598%201.0508C332.573%200.94441%20350.343%200.971036%20370.845%201.46705C371.234%201.47648%20382.532%201.60529%20386.177%202.33426C389.756%203.04998%20378.931%203.28442%20375.285%203.44428C350.881%204.51428%20326.443%204.79616%20302.024%205.31744C293.816%205.49264%20274.011%205.93763%20265.046%206.14995C260.744%206.25185%20247.903%205.82256%20252.142%206.56621C257.747%207.54944%20263.519%206.86125%20269.209%206.91309C282.905%207.03789%20295.27%207.02912%20309.031%207.05184C326.034%207.07993%20343.058%206.9318%20360.057%207.43341C361.523%207.47668%20369.348%207.59987%20372.198%208.3353C372.866%208.50762%20371.177%209.39134%20370.498%209.5147C363.489%2010.7891%20342.041%2010.7982%20349.165%2010.7982C355.906%2010.7982%20362.647%2010.7982%20369.388%2010.7982%22%20stroke%3D%22%2341F9FF%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E") no-repeat center top;
+  background-size: contain;
+  opacity: 1;
+}
+
+.video-placeholder {
+  background-color: #1A1A1A;
+  border-radius: 10px;
+  margin: 20px 0;
+  place-self: center;
+  width: 100%;
+  height: 222px;
+  gap: 0px;
+  opacity: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.27px solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.21) 100%);
+  border-image-slice: 1;
+}
+@media screen and (min-width: 1024px) {
+  .video-placeholder {
+    width: 752px;
+    height: 444.71px;
+  }
+}
+.video-placeholder .play-icon {
+  font-size: 3rem;
+  color: #fff;
+}
+.video-placeholder::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  height: 56%;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #B2FF8D -24.51%, #02D085 75.83%, #02D085 200.98%);
+  filter: blur(64px);
+  z-index: -1;
+}
+@media screen and (max-width: 500px) {
+  .video-placeholder::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #B2FF8D -24.51%, #02D085 75.83%, #02D085 200.98%);
+    filter: blur(64px);
+    z-index: -1;
+  }
+}
+
+.download-link a {
+  font-family: "Open Sauce Two";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #CFCFCF;
+}
+
+.alert-text {
+  font-family: "Open Sauce Two";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 33.8px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #D43C3C;
+}
+
+body#vsl2 {
+  background-color: #090C13;
+  background-image: url("./../assets/images/background-dois.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  min-height: 100vh;
+  height: 100%;
+  background-position-x: 80%;
+}
+@media screen and (min-width: 768px) {
+  body#vsl2 {
+    background-image: url("./../assets/images/background-dois.jpg");
+    background-position-x: center;
+  }
+}
+body#vsl2 .wrapper {
+  margin-top: 50%;
+}
+@media screen and (min-width: 768px) {
+  body#vsl2 .wrapper {
+    margin-top: 0;
+  }
+}
+body#vsl2 .alert-text {
+  font-family: "Open Sauce Two";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 33.8px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #D43C3C;
+}
+
+body#vsl3 {
+  background-color: #090C13;
+  background-image: none;
+}
+body#vsl3 .trader-section {
+  background-image: url("./../assets/images/background-tres.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding-bottom: 1%;
+  padding-top: 58%;
+}
+@media screen and (min-width: 375px) {
+  body#vsl3 .trader-section {
+    padding-top: 50%;
+    padding-bottom: 1%;
+  }
+}
+@media screen and (min-width: 425px) {
+  body#vsl3 .trader-section {
+    padding-top: 40%;
+    padding-bottom: 1%;
+  }
+}
+@media screen and (min-width: 768px) {
+  body#vsl3 .trader-section {
+    padding-top: 28%;
+    padding-bottom: 1%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body#vsl3 .trader-section {
+    padding-top: 27%;
+    padding-bottom: 10%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  body#vsl3 .trader-section {
+    padding-top: 26%;
+    padding-bottom: 13%;
+  }
+}
+body#vsl3 .trader-section h2 {
+  font-family: "Open Sauce Two";
+  font-weight: 700;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  body#vsl3 .trader-section h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  body#vsl3 .trader-section h2 {
+    font-size: 32px;
+  }
+}
+body#vsl3 .card-section {
+  justify-content: center;
+}
+body#vsl3 .custom-card {
+  background: rgba(10, 59, 78, 0.2);
+  border: 1px solid rgb(65, 249, 255);
+  border-radius: 12px;
+  align-content: center;
+  min-height: 11rem;
+}
+@media screen and (min-width: 768px) {
+  body#vsl3 .custom-card {
+    min-height: 18rem;
+  }
+}
+body#vsl3 .custom-card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+body#vsl3 .custom-card2 {
+  border: 1px solid rgb(65, 249, 255) !important;
+  border-radius: 12px;
+  align-content: center;
+  min-height: 11rem;
+}
+@media screen and (min-width: 768px) {
+  body#vsl3 .custom-card2 {
+    min-height: 18rem;
+  }
+}
+body#vsl3 .custom-card2 p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+body#vsl3 .list-section .custom-list {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+body#vsl3 .list-section .custom-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+body#vsl3 .list-section .custom-list li .icon {
+  width: 18px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body#vsl3 .list-section .custom-list li p {
+  font-weight: 400;
+  color: #CFCFCF;
+}
+body#vsl3 .list-section .custom-list li .titleList {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+/* image 1 */
+
+/*# sourceMappingURL=main.css.map */
