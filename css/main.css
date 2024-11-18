@@ -105,6 +105,11 @@ body {
     font-size: 34px;
   }
 }
+@media screen and (min-width: 1366px) {
+  .section-text h3 {
+    font-size: 36px;
+  }
+}
 
 .section-cta p {
   font-family: "Open Sauce Two";
