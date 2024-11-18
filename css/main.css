@@ -24,7 +24,7 @@
   src: url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-800-normal.woff2) format("woff2"), url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-800-normal.woff) format("woff"), url(https://cdn.jsdelivr.net/fontsource/fonts/open-sauce-two@latest/latin-800-normal.ttf) format("truetype");
 }
 body {
-  background: #090C13 url("./../assets/images/BG-Captura01-Mob.jpg") no-repeat center/cover;
+  background: #090C13 url("./../assets/images/BG-Captura01-Mob.jpg") no-repeat top/cover;
   color: #FFFFFF;
   min-height: 100vh;
   height: 100%;

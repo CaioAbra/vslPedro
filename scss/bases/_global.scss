@@ -27,7 +27,7 @@
 
 body {
     background:
-        #090C13 url('./../assets/images/BG-Captura01-Mob.jpg') no-repeat center/cover;
+        #090C13 url('./../assets/images/BG-Captura01-Mob.jpg') no-repeat top/cover;
     color: $text-color;
     min-height: 100vh;
     height: 100%;
@@ -249,8 +249,8 @@ body {
     color: #D43C3C;
 }
 
-body#vsl2 {
-    background:
+    body#vsl2 {
+        background:
         #090C13 url('./../assets/images/BG-Captura02-Mob.jpg') no-repeat 80% center/cover;
     color: $text-color;
     min-height: 100vh;
