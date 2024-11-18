@@ -39,6 +39,11 @@ body {
     background: #090C13 url("./../assets/images/BG-Captura01.jpg") no-repeat top/cover;
   }
 }
+@media screen and (min-width: 1920px) and (min-height: 1290px) {
+  body {
+    background: #090C13 url("./../assets/images/BG-Captura01.jpg") no-repeat top/contain;
+  }
+}
 
 .elipse {
   background-image: url(./../assets/images/background-blur.png);
@@ -65,9 +70,19 @@ body {
     margin-top: 12%;
   }
 }
-@media screen and (min-width: 2500px) {
+@media screen and (min-width: 1440px) {
   .wrapper {
-    margin-top: 40%;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .wrapper {
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .wrapper {
+    margin-top: 30%;
   }
 }
 
