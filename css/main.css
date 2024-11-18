@@ -228,7 +228,7 @@ body {
 }
 
 body#vsl2 {
-  background: #090C13 url("./../assets/images/BG-Captura02-Mob.jpg") no-repeat 80% center/cover;
+  background: #090C13 url("./../assets/images/BG-Captura02-Mob.jpg") no-repeat 80% top/cover;
   color: #FFFFFF;
   min-height: 100vh;
   height: 100%;
