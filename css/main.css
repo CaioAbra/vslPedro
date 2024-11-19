@@ -275,7 +275,7 @@ body#vsl2 {
 }
 @media screen and (min-width: 768px) {
   body#vsl2 {
-    background: #090C13 url("./../assets/images/BG-Captura02.png") no-repeat center/cover;
+    background: #090C13 url("./../assets/images/BG-Captura02.png") no-repeat top/cover;
   }
 }
 body#vsl2 .wrapper {
