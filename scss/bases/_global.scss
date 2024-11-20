@@ -382,8 +382,15 @@ body#vsl3 {
         }
 
         @media screen and (min-width:1366px) {
-            padding-top: 25rem;
+            padding-top: 23rem;
+            background-size: 100% 70rem;
             // padding-bottom: 1%;
+        }
+
+        @media screen and (min-width:1920px) {
+            padding-top: 23rem;
+            background-size: 100% 86rem;
+            padding-bottom: 3rem;
         }
 
         // @media screen and (min-width:768px) {
@@ -566,7 +573,7 @@ body#vsl3 {
 
         @media screen and (min-width:1920px) {
             background: url('./../assets/images/sombra.png') no-repeat bottom/contain;
-            padding-top: 30%;
+            // padding-top: 30%;
         }
     }
 

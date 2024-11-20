@@ -358,7 +358,15 @@ body#vsl3 .trader-section:before {
 }
 @media screen and (min-width: 1366px) {
   body#vsl3 .trader-section {
-    padding-top: 25rem;
+    padding-top: 23rem;
+    background-size: 100% 70rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  body#vsl3 .trader-section {
+    padding-top: 23rem;
+    background-size: 100% 86rem;
+    padding-bottom: 3rem;
   }
 }
 body#vsl3 .trader-section h2 {
@@ -453,7 +461,6 @@ body#vsl3 .sombra {
 @media screen and (min-width: 1920px) {
   body#vsl3 .sombra {
     background: url("./../assets/images/sombra.png") no-repeat bottom/contain;
-    padding-top: 30%;
   }
 }
 body#vsl3 .glow-left {
