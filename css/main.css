@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.cdnfonts.com/css/galano-grotesque-alt");
 /* open-sauce-two-latin-500-normal */
 @font-face {
@@ -305,9 +306,22 @@ body#vsl3 {
   }
 }
 body#vsl3 .trader-section {
-  background: url("./../assets/images/background-tres.jpg") no-repeat center top/cover, url("./../assets/images/Glow.png") no-repeat center top/100% 100%;
+  background: url("./../assets/images/background-tres.jpg") no-repeat center top/cover;
+  z-index: 0;
+  /* Fundo */
   padding-bottom: 1%;
   padding-top: 58%;
+}
+body#vsl3 .trader-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./../assets/images/Glow.png") no-repeat top right/contain;
+  z-index: 1;
+  /* Traz para a frente */
 }
 @media screen and (min-width: 375px) {
   body#vsl3 .trader-section {
@@ -323,6 +337,7 @@ body#vsl3 .trader-section {
 }
 @media screen and (min-width: 768px) {
   body#vsl3 .trader-section {
+    background: url("./../assets/images/background-tres.jpg") no-repeat center top/cover, url("./../assets/images/Glow.png") no-repeat center right/contain;
     padding-top: 28%;
     padding-bottom: 1%;
   }
@@ -337,6 +352,34 @@ body#vsl3 .trader-section {
   body#vsl3 .trader-section {
     padding-top: 26%;
     padding-bottom: 13%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body#vsl3 .trader-section {
+    background: url("./../assets/images/hero_vsl3.png") no-repeat center top/cover;
+    padding-bottom: 10rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body#vsl3 .trader-section {
+    padding-bottom: 12rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  body#vsl3 .trader-section {
+    background: url("./../assets/images/hero_vsl3.png") no-repeat center top/cover;
+    padding-top: 0;
+    padding-bottom: 17rem;
+  }
+}
+@media screen and (min-width: 2000px) {
+  body#vsl3 .trader-section {
+    padding-bottom: 10rem;
+  }
+}
+@media screen and (min-width: 2500px) {
+  body#vsl3 .trader-section {
+    padding-bottom: 25rem;
   }
 }
 body#vsl3 .trader-section h2 {
@@ -424,6 +467,33 @@ body#vsl3 h3 {
   body#vsl3 h3 {
     font-size: 24px;
   }
+}
+body#vsl3 .sombra {
+  background: url("./../assets/images/sombra.png") no-repeat bottom/contain;
+}
+@media screen and (min-width: 1920px) {
+  body#vsl3 .sombra {
+    background: url("./../assets/images/sombra.png") no-repeat bottom/contain;
+    padding-top: 30%;
+  }
+}
+body#vsl3 .glow-left {
+  z-index: 0;
+  height: 100%;
+  position: relative;
+}
+body#vsl3 .glow-left:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Certifica que cobre toda a altura */
+  background: url("./../assets/images/Glow-left.png") no-repeat left bottom/contain;
+  /* Ajuste se necessário para preencher corretamente */
+  z-index: 1;
+  /* Traz para a frente */
 }
 
 .subheading {
