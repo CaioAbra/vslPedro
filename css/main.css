@@ -330,6 +330,8 @@ body#vsl3 .trader-section:before {
   width: 100%;
   height: 100%;
   background: url("./../assets/images/Glow.png") no-repeat top right/contain;
+  pointer-events: none;
+  /* Não interferir na interação */
 }
 @media screen and (max-width: 374px) {
   body#vsl3 .trader-section {
@@ -362,10 +364,15 @@ body#vsl3 .trader-section:before {
     background-size: 100% 70rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  body#vsl3 .trader-section {
+    padding-top: 23rem;
+    background: url("./../assets/images/BG-Captura03-teste.jpg") no-repeat top center;
+  }
+}
 @media screen and (min-width: 1920px) {
   body#vsl3 .trader-section {
     padding-top: 23rem;
-    background-size: 100% 86rem;
     padding-bottom: 3rem;
   }
 }
@@ -480,6 +487,8 @@ body#vsl3 .glow-left:after {
   /* Ajuste se necessário para preencher corretamente */
   z-index: 1;
   /* Traz para a frente */
+  pointer-events: none;
+  /* Não interferir na interação */
 }
 
 .subheading {
