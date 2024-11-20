@@ -153,6 +153,7 @@ body {
   font-family: "Open Sauce Two";
   font-weight: 800;
   text-transform: uppercase;
+  transition: all 0.5s ease;
 }
 @media screen and (max-width: 768px) {
   .section-cta a.cta-button {
@@ -163,6 +164,14 @@ body {
   .section-cta a.cta-button {
     font-size: 18px;
   }
+}
+.section-cta a.cta-button:hover {
+  color: white;
+  position: relative;
+  background: linear-gradient(180deg, #41F9FF 35.25%, #02A3D0 200.98%);
+  /* Adicionando uma sobreposição escura */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.9);
+  /* Ajuste o valor de opacidade (0.4) conforme necessário */
 }
 
 .highlight {
@@ -305,12 +314,13 @@ body#vsl3 {
     background: #090C13 none;
   }
 }
+body#vsl3 .description {
+  font-size: 20px;
+}
 body#vsl3 .trader-section {
   background: url("./../assets/images/background-tres.jpg") no-repeat center top/cover;
   z-index: 0;
   /* Fundo */
-  padding-bottom: 1%;
-  padding-top: 58%;
 }
 body#vsl3 .trader-section:before {
   content: "";
@@ -320,66 +330,35 @@ body#vsl3 .trader-section:before {
   width: 100%;
   height: 100%;
   background: url("./../assets/images/Glow.png") no-repeat top right/contain;
-  z-index: 1;
-  /* Traz para a frente */
+}
+@media screen and (max-width: 374px) {
+  body#vsl3 .trader-section {
+    padding-top: 16rem;
+  }
 }
 @media screen and (min-width: 375px) {
   body#vsl3 .trader-section {
-    padding-top: 50%;
-    padding-bottom: 1%;
+    padding-top: 60%;
   }
 }
 @media screen and (min-width: 425px) {
   body#vsl3 .trader-section {
-    padding-top: 40%;
-    padding-bottom: 1%;
+    padding-top: 50%;
   }
 }
 @media screen and (min-width: 768px) {
   body#vsl3 .trader-section {
-    background: url("./../assets/images/background-tres.jpg") no-repeat center top/cover, url("./../assets/images/Glow.png") no-repeat center right/contain;
-    padding-top: 28%;
-    padding-bottom: 1%;
+    padding-top: 30%;
   }
 }
 @media screen and (min-width: 1024px) {
   body#vsl3 .trader-section {
-    padding-top: 27%;
-    padding-bottom: 10%;
+    padding-top: 20rem;
   }
 }
 @media screen and (min-width: 1366px) {
   body#vsl3 .trader-section {
-    padding-top: 26%;
-    padding-bottom: 13%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  body#vsl3 .trader-section {
-    background: url("./../assets/images/hero_vsl3.png") no-repeat center top/cover;
-    padding-bottom: 10rem;
-  }
-}
-@media screen and (min-width: 1600px) {
-  body#vsl3 .trader-section {
-    padding-bottom: 12rem;
-  }
-}
-@media screen and (min-width: 1920px) {
-  body#vsl3 .trader-section {
-    background: url("./../assets/images/hero_vsl3.png") no-repeat center top/cover;
-    padding-top: 0;
-    padding-bottom: 17rem;
-  }
-}
-@media screen and (min-width: 2000px) {
-  body#vsl3 .trader-section {
-    padding-bottom: 10rem;
-  }
-}
-@media screen and (min-width: 2500px) {
-  body#vsl3 .trader-section {
-    padding-bottom: 25rem;
+    padding-top: 25rem;
   }
 }
 body#vsl3 .trader-section h2 {
@@ -389,7 +368,7 @@ body#vsl3 .trader-section h2 {
 }
 @media screen and (max-width: 768px) {
   body#vsl3 .trader-section h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -517,7 +496,5 @@ body#vsl3 .glow-left:after {
     font-size: 1rem;
   }
 }
-
-/* image 1 */
 
 /*# sourceMappingURL=main.css.map */

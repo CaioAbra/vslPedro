@@ -157,7 +157,7 @@ body {
         font-family: 'Open Sauce Two';
         font-weight: 800;
         text-transform: uppercase;
-        // transition: box-shadow .5s ease;
+        transition: all .5s ease;
 
         @media screen and (max-width:768px) {
             font-size: 1rem;
@@ -167,9 +167,14 @@ body {
             font-size: 18px;
         }
 
-        // &:hover {
-        //     box-shadow: 0 8px 15px #02D085; // Sombra com base na cor do gradienteF
-        // }
+        &:hover {
+            color: white;
+            position: relative;
+            background: linear-gradient(180deg, #41F9FF 35.25%, #02A3D0 200.98%);
+            /* Adicionando uma sobreposição escura */
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.9);
+            /* Ajuste o valor de opacidade (0.4) conforme necessário */
+        }
     }
 }
 
@@ -326,24 +331,16 @@ body#vsl3 {
         background: #090C13 none;
     }
 
-
-    // .trader-section {
-    //     background:
-    //         url('./../assets/images/background-tres.jpg') no-repeat center top/contain;
-
-    //     @media screen and (min-width:1920px) {
-    //         background:
-    //             url('./../assets/images/background-tres.jpg') no-repeat center top/cover;
-    //         padding-top: 28%;
-    //         padding-bottom: 1%;
-    //     }
-    // }
+    .description {
+        font-size: 20px;
+    }
 
     .trader-section {
         // background: none;
         background: url('./../assets/images/background-tres.jpg') no-repeat center top/cover;
         z-index: 0;
         /* Fundo */
+
 
         &:before {
             content: '';
@@ -353,74 +350,86 @@ body#vsl3 {
             width: 100%;
             height: 100%;
             background: url('./../assets/images/Glow.png') no-repeat top right/contain;
-            z-index: 1;
-            /* Traz para a frente */
+
         }
 
-        // url('./../assets/images/background-tres.jpg') no-repeat center top/contain, 
-        // url('./../assets/images/Glow.png') no-repeat center right/contain;
 
-        // url('./../assets/images/background-tres.jpg') no-repeat center top/contain,
-        // url('./../assets/images/Glow.png') no-repeat center top/100% 100%;
 
-        padding-bottom: 1%;
-        padding-top: 58%;
+
+        @media screen and (max-width:374px) {
+            padding-top: 16rem;
+            // padding-bottom: 1%;
+        }
 
         @media screen and (min-width:375px) {
-            padding-top: 50%;
-            padding-bottom: 1%;
+            padding-top: 60%;
+            // padding-bottom: 1%;
         }
 
         @media screen and (min-width:425px) {
-            padding-top: 40%;
-            padding-bottom: 1%;
+            padding-top: 50%;
+            // padding-bottom: 1%;
         }
 
         @media screen and (min-width:768px) {
-            background:
-                url('./../assets/images/background-tres.jpg') no-repeat center top/cover,
-                url('./../assets/images/Glow.png') no-repeat center right/contain;
-            padding-top: 28%;
-            padding-bottom: 1%;
+            padding-top: 30%;
+            // padding-bottom: 1%;
         }
 
         @media screen and (min-width:1024px) {
-            padding-top: 27%;
-            padding-bottom: 10%;
+            padding-top: 20rem;
+            // padding-bottom: 1%;
         }
 
         @media screen and (min-width:1366px) {
-            padding-top: 26%;
-            padding-bottom: 13%;
+            padding-top: 25rem;
+            // padding-bottom: 1%;
         }
 
+        // @media screen and (min-width:768px) {
+        //     background:
+        //         url('./../assets/images/background-tres.jpg') no-repeat center top/cover,
+        //         url('./../assets/images/Glow.png') no-repeat center right/contain;
+        //     padding-top: 28%;
+        //     padding-bottom: 1%;
+        // }
 
-        @media screen and (min-width:1440px) {
-            background:
-                // url('./../assets/images/background-tres.jpg') no-repeat center top/100% 100%;
-                url('./../assets/images/hero_vsl3.png') no-repeat center top/cover;
-            padding-bottom: 10rem;
-        }
+        // @media screen and (min-width:1024px) {
+        //     padding-top: 27%;
+        //     padding-bottom: 10%;
+        // }
 
-        @media screen and (min-width:1600px) {
-            padding-bottom: 12rem;
-        }
+        // @media screen and (min-width:1366px) {
+        //     padding-top: 26%;
+        //     padding-bottom: 13%;
+        // }
 
-        @media screen and (min-width:1920px) {
-            background:
-                // url('./../assets/images/background-tres.jpg') no-repeat center top/100% 100%;
-                url('./../assets/images/hero_vsl3.png') no-repeat center top/cover;
-            padding-top: 0;
-            padding-bottom: 17rem;
-        }
 
-        @media screen and (min-width:2000px) {
-            padding-bottom: 10rem;
-        }
+        // @media screen and (min-width:1440px) {
+        //     background:
+        //         // url('./../assets/images/background-tres.jpg') no-repeat center top/100% 100%;
+        //         url('./../assets/images/hero_vsl3.png') no-repeat center top/cover;
+        //     padding-bottom: 10rem;
+        // }
 
-        @media screen and (min-width:2500px) {
-            padding-bottom: 25rem;
-        }
+        // @media screen and (min-width:1600px) {
+        //     padding-bottom: 12rem;
+        // }
+
+        // @media screen and (min-width:1920px) {
+        //     background:
+        //         url('./../assets/images/hero_vsl3.png') no-repeat center top/cover;
+        //     padding-top: 0;
+        //     padding-bottom: 17rem;
+        // }
+
+        // @media screen and (min-width:2000px) {
+        //     padding-bottom: 10rem;
+        // }
+
+        // @media screen and (min-width:2500px) {
+        //     padding-bottom: 25rem;
+        // }
 
 
 
@@ -430,7 +439,7 @@ body#vsl3 {
             color: #FFFFFF;
 
             @media screen and (max-width:768px) {
-                font-size: 32px;
+                font-size: 30px;
             }
 
             @media screen and (min-width:1366px) {
@@ -581,6 +590,8 @@ body#vsl3 {
             /* Traz para a frente */
         }
     }
+
+    // .cta-button:hover {}
 }
 
 
@@ -603,26 +614,3 @@ body#vsl3 {
         font-size: 1rem
     }
 }
-
-/* image 1 */
-
-// position: absolute;
-// width: 1961px;
-// height: 2614px;
-// left: -41px;
-// top: -706px;
-
-// background: linear-gradient(180deg, rgba(9, 12, 19, 0) 46.34%, rgba(9, 12, 19, 0.6) 53.65%, #090C13 70.09%), url(ce020c1e-5d6b-403d-9a03-03ef3ab961f2.jpg);
-
-
-// /* Ellipse 1 */
-
-// position: absolute;
-// width: 1493px;
-// height: 680px;
-// left: 213.5px;
-// top: 370px;
-
-// background: #090C13;
-// opacity: 0.8;
-// filter: blur(75px);
