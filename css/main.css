@@ -47,7 +47,7 @@ body {
 }
 
 .elipse {
-  background-image: url(./../assets/images/background-blur.png);
+  background-image: url(./../assets/images/background-blur.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: top;
@@ -285,7 +285,7 @@ body#vsl2 {
 }
 @media screen and (min-width: 768px) {
   body#vsl2 {
-    background: #090C13 url("./../assets/images/BG-Captura02.png") no-repeat top/cover;
+    background: #090C13 url("./../assets/images/BG-Captura02.webp") no-repeat top/cover;
   }
 }
 body#vsl2 .wrapper {
@@ -329,7 +329,7 @@ body#vsl3 .trader-section:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("./../assets/images/Glow.png") no-repeat top right/contain;
+  background: url("./../assets/images/Glow.webp") no-repeat top right/contain;
   pointer-events: none;
   /* Não interferir na interação */
 }
@@ -463,11 +463,11 @@ body#vsl3 h3 {
   }
 }
 body#vsl3 .sombra {
-  background: url("./../assets/images/sombra.png") no-repeat bottom/contain;
+  background: url("./../assets/images/sombra.webp") no-repeat bottom/contain;
 }
 @media screen and (min-width: 1920px) {
   body#vsl3 .sombra {
-    background: url("./../assets/images/sombra.png") no-repeat bottom/contain;
+    background: url("./../assets/images/sombra.webp") no-repeat bottom/contain;
   }
 }
 body#vsl3 .glow-left {
@@ -483,7 +483,7 @@ body#vsl3 .glow-left:after {
   width: 100%;
   height: 100%;
   /* Certifica que cobre toda a altura */
-  background: url("./../assets/images/Glow-left.png") no-repeat left bottom/contain;
+  background: url("./../assets/images/Glow-left.webp") no-repeat left bottom/contain;
   /* Ajuste se necessário para preencher corretamente */
   z-index: 1;
   /* Traz para a frente */
